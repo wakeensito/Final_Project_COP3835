@@ -1,0 +1,98 @@
+<!-- Author: Joaquin Porter
+     Date: 04/19/2026
+     Services | Keen Cuts Barbershop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Services | Keen Cuts Barbershop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+	<header>
+		<a class="site-logo" href="index.html" aria-label="Keen Cuts Barbershop home">Keen Cuts</a>
+		<h1>Keen Cuts Barbershop</h1>
+		<h2>Services & pricing</h2>
+	</header>
+
+	<nav>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" id="menu-button"></label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html" class="current">Services</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="book.html">Book Now</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main class="page-services">
+		<section>
+			<aside>
+				<h3>Quick links</h3>
+				<ul>
+					<li><a href="book.html">Book an appointment</a></li>
+					<li><a href="contact.html">Hours & location</a></li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h2>What we do</h2>
+			<p>Classic barbering with modern detail. If you’re not sure what to choose, book a haircut and we’ll dial in the look together.</p>
+
+			<h3>Service menu</h3>
+			<dl class="service-list">
+				<dt>Classic Haircut</dt>
+				<dd>Consultation, cut, neck cleanup, and style.</dd>
+
+				<dt>Fade (Low / Mid / High)</dt>
+				<dd>Precision fade with a clean blend and finish.</dd>
+
+				<dt>Beard Trim + Line-Up</dt>
+				<dd>Shape, line, and detail work for a sharp beard.</dd>
+
+				<dt>Straight Razor Shave</dt>
+				<dd>Hot towel prep and a smooth, classic shave.</dd>
+
+				<dt>Kids Cut</dt>
+				<dd>Clean cut with extra patience.</dd>
+			</dl>
+
+			<h3>Pricing</h3>
+			<table class="table">
+				<caption>Service pricing (starting at)</caption>
+				<thead>
+					<tr>
+						<th scope="col">Service</th>
+						<th scope="col">Time</th>
+						<th scope="col" class="table__num">Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td>Classic Haircut</td><td>30-45 min</td><td class="table__num">$30</td></tr>
+					<tr><td>Fade</td><td>45 min</td><td class="table__num">$35</td></tr>
+					<tr><td>Beard Trim + Line-Up</td><td>20-30 min</td><td class="table__num">$20</td></tr>
+					<tr><td>Straight Razor Shave</td><td>30 min</td><td class="table__num">$25</td></tr>
+					<tr><td>Kids Cut</td><td>25-35 min</td><td class="table__num">$25</td></tr>
+				</tbody>
+			</table>
+
+			<p class="muted">Prices vary by length, style, and add-ons. Ask us about beard conditioning and hot towel service.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			<strong>Keen Cuts Barbershop</strong> • 123 Main Street • Miami, FL
+			• <a href="mailto:keencuts@example.com">keencuts@example.com</a>
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!-- Author: Joaquin Porter
+     Date: 04/19/2026
+     Home | Keen Cuts Barbershop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Keen Cuts Barbershop | Home</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+	<header>
+		<a class="site-logo" href="index.html" aria-label="Keen Cuts Barbershop home">Keen Cuts</a>
+		<h1>Keen Cuts Barbershop</h1>
+		<h2>Fresh cuts. Clean fades. Straight razor shaves.</h2>
+	</header>
+	
+	<nav>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" id="menu-button"></label>
+		<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="book.html">Book Now</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section>
+			<aside>
+				<h3>Hours</h3>
+				<table class="table table--compact">
+					<caption class="sr-only">Shop hours</caption>
+					<tbody>
+						<tr><th scope="row">Mon</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Tue</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Wed</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Thu</th><td>9:00 AM - 7:00 PM</td></tr>
+						<tr><th scope="row">Fri</th><td>9:00 AM - 7:00 PM</td></tr>
+						<tr><th scope="row">Sat</th><td>10:00 AM - 4:00 PM</td></tr>
+						<tr><th scope="row">Sun</th><td>Closed</td></tr>
+					</tbody>
+				</table>
+
+				<h3 class="mt-lg">Location</h3>
+				<p class="muted">123 Main Street, Miami, FL 33101</p>
+				<p><a href="contact.html">Get directions</a></p>
+
+				<div class="cta-card mt-lg">
+					<h3 class="cta-card__title">Walk-ins welcome</h3>
+					<p class="muted">For guaranteed time, book ahead.</p>
+					<p><a class="btn" href="book.html">Book an appointment</a></p>
+				</div>
+			</aside>
+		</section>
+		
+		<section>
+			<div class="hero">
+				<h2 class="hero__title">Look sharp, feel confident.</h2>
+				<p class="hero__subtitle">Classic barbershop service with modern style cuts, fades, beard trims, and straight-razor shaves.</p>
+				<div class="hero__actions">
+					<a class="btn" href="book.html">Book now</a>
+					<a class="btn btn--ghost" href="services.html">See services</a>
+				</div>
+			</div>
+
+			<h3>Popular services</h3>
+			<ul class="list-cards">
+				<li class="card">
+					<h4 class="card__title">Classic Haircut</h4>
+					<p class="muted">Clean lines, tailored finish.</p>
+					<p class="card__meta">From $30 • 30-45 min</p>
+				</li>
+				<li class="card">
+					<h4 class="card__title">Skin Fade</h4>
+					<p class="muted">Tight fade, smooth blend.</p>
+					<p class="card__meta">From $35 • 45 min</p>
+				</li>
+				<li class="card">
+					<h4 class="card__title">Beard Trim + Line-Up</h4>
+					<p class="muted">Shape, detail, and finish.</p>
+					<p class="card__meta">From $20 • 20-30 min</p>
+				</li>
+			</ul>
+
+			<h3 id="shop-vibe-heading">Shop vibe</h3>
+			<div class="media-placeholder media-placeholder--audio" role="region" aria-labelledby="shop-vibe-heading">
+				<audio controls preload="metadata" src="media/WAV_For_Lo-Fi.wav">
+					<a href="media/WAV_For_Lo-Fi.wav">Download shop vibe audio (WAV)</a>
+				</audio>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>
+			<strong>Keen Cuts Barbershop</strong> • 123 Main Street • Miami, FL
+			• <a href="mailto:keencuts@example.com">keencuts@example.com</a>
+		</p>
+	</footer>
+</body>
+</html>

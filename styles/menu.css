@@ -1,0 +1,165 @@
+/* Author: Joaquin Porter
+    Date: 3/8/2026
+    CSS for navigation menu - Mobile First */
+
+/* Mobile-first navigation styles */
+nav {
+    background-color: #000;
+    border-bottom: 3px solid #000;
+    position: relative;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Menu button (hamburger) - visible on mobile */
+#menu-button {
+    display: block;
+    padding: 0.5em 1em;
+    color: white;
+    font-size: 150%;
+    cursor: pointer;
+    background-color: #000;
+}
+
+#menu-button::before {
+    content: '\2630';
+}
+
+/* Change to X when menu is open */
+#menu-toggle:checked ~ #menu-button::before {
+    content: '\00D7';
+}
+
+/* Hide menu by default on mobile */
+nav > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color: #000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/* Show menu when checkbox is checked */
+#menu-toggle:checked ~ ul {
+    display: flex;
+}
+
+nav > ul > li {
+    position: relative;
+    width: 250px;
+}
+
+nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    padding: 0.3em 1em;
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+/* Current page styling */
+nav a.current {
+    color: #c29b40 !important;
+    font-weight: bold;
+}
+
+/* Hover effect - keep text white */
+nav a:hover {
+    background-color: gray;
+    color: white !important;
+}
+
+nav a.current:hover {
+    color: #e2c37a !important;
+}
+
+/* Submenu symbol - right triangle on mobile */
+.submenu-symbol {
+    font-size: 70%;
+}
+
+.submenu-symbol::before {
+    content: '\25B6';
+}
+
+/* Submenu styles - positioned to the right on mobile */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #000;
+    min-width: 200px;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li:hover > ul {
+    display: flex;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul ul a {
+    display: flex;
+    align-items: center;
+    padding: 0.25em 1em;
+    color: white !important;
+    text-decoration: none;
+    min-height: 1.5em;
+}
+
+nav ul ul a:hover {
+    background-color: gray;
+    color: white !important;
+}
+
+/* Media query for medium screen sizes (800px+) */
+@media (min-width: 800px) {
+    /* Hide menu button */
+    #menu-button {
+        display: none;
+    }
+    
+    /* Make navigation menu visible and horizontal */
+    nav > ul {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    nav > ul > li {
+        width: auto;
+    }
+    
+    nav > ul > li > a {
+        white-space: nowrap;
+    }
+    
+    /* Change symbol to down triangle and position submenus below */
+    .submenu-symbol::before {
+        content: '\25BC';
+    }
+    
+    /* Submenus drop down below on desktop */
+    nav ul ul {
+        top: 100%;
+        left: 0;
+    }
+}

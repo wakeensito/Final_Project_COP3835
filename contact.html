@@ -1,0 +1,89 @@
+<!-- Author: Joaquin Porter
+     Date: 04/19/2026
+     Contact | Keen Cuts Barbershop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Keen Cuts Barbershop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+	<header>
+		<a class="site-logo" href="index.html" aria-label="Keen Cuts Barbershop home">Keen Cuts</a>
+		<h1>Keen Cuts Barbershop</h1>
+		<h2>Contact & location</h2>
+	</header>
+
+	<nav>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" id="menu-button"></label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="book.html">Book Now</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html" class="current">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main class="page-contact">
+		<section>
+			<aside>
+				<h3>Contact</h3>
+				<p><strong>Email:</strong> <a href="mailto:keencuts@example.com">keencuts@example.com</a></p>
+				<p><strong>Phone:</strong> <a href="tel:+13055336288">305-keencut</a></p>
+				<p><strong>Address:</strong> 123 Main Street, Miami, FL 33101</p>
+
+				<h3 class="mt-lg">Hours</h3>
+				<table class="table table--compact">
+					<caption class="sr-only">Shop hours</caption>
+					<tbody>
+						<tr><th scope="row">Mon</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Tue</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Wed</th><td>9:00 AM - 6:00 PM</td></tr>
+						<tr><th scope="row">Thu</th><td>9:00 AM - 7:00 PM</td></tr>
+						<tr><th scope="row">Fri</th><td>9:00 AM - 7:00 PM</td></tr>
+						<tr><th scope="row">Sat</th><td>10:00 AM - 4:00 PM</td></tr>
+						<tr><th scope="row">Sun</th><td>Closed</td></tr>
+					</tbody>
+				</table>
+			</aside>
+		</section>
+
+		<section>
+			<h2>Send a message</h2>
+			<form class="form" action="contact.html" method="get">
+				<div class="form__row">
+					<label for="c-name">Name</label>
+					<input type="text" id="c-name" name="name" required>
+				</div>
+				<div class="form__row">
+					<label for="c-email">Email</label>
+					<input type="email" id="c-email" name="email" required>
+				</div>
+				<div class="form__row">
+					<label for="c-message">Message</label>
+					<textarea id="c-message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+				</div>
+				<div class="form__actions">
+					<button class="btn" type="submit">Send</button>
+					<a class="btn btn--ghost" href="book.html">Book instead</a>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			<strong>Keen Cuts Barbershop</strong> • 123 Main Street • Miami, FL
+			• <a href="mailto:keencuts@example.com">keencuts@example.com</a>
+		</p>
+	</footer>
+</body>
+</html>

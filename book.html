@@ -1,0 +1,113 @@
+<!-- Author: Joaquin Porter
+     Date: 04/19/2026
+     Book Now | Keen Cuts Barbershop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book Now | Keen Cuts Barbershop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+	<header>
+		<a class="site-logo" href="index.html" aria-label="Keen Cuts Barbershop home">Keen Cuts</a>
+		<h1>Keen Cuts Barbershop</h1>
+		<h2>Book an appointment</h2>
+	</header>
+
+	<nav>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" id="menu-button"></label>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="book.html" class="current">Book Now</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main class="page-book">
+		<section>
+			<aside>
+				<h3>How it works</h3>
+				<ol>
+					<li>Choose your service.</li>
+					<li>Pick a date and time.</li>
+					<li>Tell us any details (length, style, beard goals).</li>
+					<li>We’ll confirm when you arrive.</li>
+				</ol>
+			</aside>
+		</section>
+
+		<section>
+			<h2>Request a time</h2>
+			<p class="muted">This form is a placeholder workflow. You can connect it to your preferred booking system later.</p>
+
+			<form class="form" action="contact.html" method="get">
+				<div class="form__row">
+					<label for="name">Full name</label>
+					<input type="text" id="name" name="name" required autocomplete="name">
+				</div>
+
+				<div class="form__row">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required autocomplete="email">
+				</div>
+
+				<div class="form__row">
+					<label for="phone">Phone</label>
+					<input type="tel" id="phone" name="phone" required autocomplete="tel">
+				</div>
+
+				<div class="form__row">
+					<label for="service">Service</label>
+					<select id="service" name="service" required>
+						<option value="" selected disabled>Select one</option>
+						<option>Classic Haircut</option>
+						<option>Fade</option>
+						<option>Beard Trim + Line-Up</option>
+						<option>Straight Razor Shave</option>
+						<option>Kids Cut</option>
+					</select>
+				</div>
+
+				<div class="form__row form__row--split">
+					<div>
+						<label for="date">Preferred date</label>
+						<input type="date" id="date" name="date" required>
+					</div>
+					<div>
+						<label for="time">Preferred time</label>
+						<input type="time" id="time" name="time" step="1800" required>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<label for="notes">Notes</label>
+					<textarea id="notes" name="notes" rows="4" placeholder="Tell us what you want (length, style, beard goals, etc.)"></textarea>
+				</div>
+
+				<div class="form__actions">
+					<button class="btn" type="submit">Send request</button>
+					<a class="btn btn--ghost" href="services.html">Back to services</a>
+				</div>
+			</form>
+
+			<p class="muted">Prefer email? Use <a href="mailto:keencuts@example.com">keencuts@example.com</a>.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			<strong>Keen Cuts Barbershop</strong> • 123 Main Street • Miami, FL
+			• <a href="mailto:keencuts@example.com">keencuts@example.com</a>
+		</p>
+	</footer>
+</body>
+</html>
